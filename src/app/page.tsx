@@ -48,13 +48,6 @@ export default function BackgroundBeamsDemo() {
             <p className="text-gray-400 max-w-lg mx-auto my-2 text-sm text-center relative z-10">
               We are here to help with any questions about the club or events.
             </p>
-            {/* <input
-              type="text"
-              placeholder="Enter your email address"
-              className="rounded-lg border border-neutral-800 focus:ring-2 focus:ring-teal-500  w-full relative z-10 mt-4  bg-neutral-950 placeholder:text-neutral-700 h-10 p-2"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-            /> */}
 
             <input
               type="text"
