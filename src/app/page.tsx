@@ -46,7 +46,8 @@ export default function BackgroundBeamsDemo() {
             </h1>
             <p></p>
             <p className="text-gray-400 max-w-lg mx-auto my-2 text-sm text-center relative z-10">
-              We are here to help with any questions about the club or events.
+              We are here to help you out with any queries about your academic
+              difficulties .
             </p>
 
             <input

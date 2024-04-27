@@ -23,7 +23,7 @@ export const WelcomeEmail = ({
 }: WelcomeEmailProps) => (
   <Html>
     <Head />
-    <Preview>Resource Rise</Preview>
+    <Preview>Accelify</Preview>
     <Body style={main}>
       <Container style={container}>
         <Img
@@ -34,24 +34,20 @@ export const WelcomeEmail = ({
           style={logo}
         />
         <Text style={paragraph}>Hi {userFirstname},</Text>
-        <Text style={paragraph}>
-          Welcome to Resource Rise, Explore the world of Linux with our club.
-          Learn, collaborate, and delve into the power of open-source technology
-          together.
-        </Text>
+        <Text style={paragraph}>The user gave the below Feedback :</Text>
         {message && <Text style={paragraph}>Message: {message}</Text>}
         <Section style={btnContainer}>
           <Button style={button} href="linux-vitb.vercel.app">
-            Get started
+            Go back to site
           </Button>
         </Section>
         <Text style={paragraph}>
           Best,
           <br />
-          Resource Rise
+          Accelify
         </Text>
         <Hr style={hr} />
-        <Text style={footer}>Vitb , Sehore Mp </Text>
+        <Text style={footer}>VIT Bhopal , Sehore Mp </Text>
       </Container>
     </Body>
   </Html>
