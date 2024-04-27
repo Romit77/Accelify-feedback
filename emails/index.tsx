@@ -18,7 +18,7 @@ interface WelcomeEmailProps {
 }
 
 export const WelcomeEmail = ({
-  userFirstname = "User",
+  userFirstname = "Admin",
   message,
 }: WelcomeEmailProps) => (
   <Html>
