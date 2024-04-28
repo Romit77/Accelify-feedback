@@ -12,48 +12,51 @@ import {
 } from "@react-email/components";
 import * as React from "react";
 
-interface WelcomeEmailProps {
+interface KoalaWelcomeEmailProps {
   userFirstname: string;
   message: string;
+  UserEmail: String;
 }
 
-export const WelcomeEmail = ({
+export const KoalaWelcomeEmail = ({
   userFirstname = "Admin",
   message,
-}: WelcomeEmailProps) => (
+  UserEmail,
+}: KoalaWelcomeEmailProps) => (
   <Html>
     <Head />
-    <Preview>Accelify</Preview>
+    <Preview>Linux Club Vitb</Preview>
     <Body style={main}>
       <Container style={container}>
         <Img
-          src={`https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2015&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D`}
-          width="70"
-          height="70"
-          alt="RR"
+          src={`https://images.unsplash.com/photo-1629654297299-c8506221ca97?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D`}
+          width="50"
+          height="50"
+          alt="Koala"
           style={logo}
         />
         <Text style={paragraph}>Hi {userFirstname},</Text>
-        <Text style={paragraph}>The user gave the following Feedback :</Text>
+        <Text style={paragraph}>The user gave the following feedback :</Text>
+        {UserEmail && <Text style={paragraph}> User-Email: {UserEmail}</Text>}
         {message && <Text style={paragraph}>Message: {message}</Text>}
         <Section style={btnContainer}>
           <Button style={button} href="linux-vitb.vercel.app">
-            Check out the site
+            Get started
           </Button>
         </Section>
         <Text style={paragraph}>
           Best,
           <br />
-          Accelify
+          Linux Club
         </Text>
         <Hr style={hr} />
-        <Text style={footer}>VIT Bhopal , Sehore Mp </Text>
+        <Text style={footer}>Vitb , Sehore Mp </Text>
       </Container>
     </Body>
   </Html>
 );
 
-export default WelcomeEmail;
+export default KoalaWelcomeEmail;
 
 const main = {
   backgroundColor: "#ffffff",
