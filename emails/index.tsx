@@ -34,11 +34,11 @@ export const WelcomeEmail = ({
           style={logo}
         />
         <Text style={paragraph}>Hi {userFirstname},</Text>
-        <Text style={paragraph}>The user gave the below Feedback :</Text>
+        <Text style={paragraph}>The user gave the following Feedback :</Text>
         {message && <Text style={paragraph}>Message: {message}</Text>}
         <Section style={btnContainer}>
           <Button style={button} href="linux-vitb.vercel.app">
-            Go back to site
+            Check out the site
           </Button>
         </Section>
         <Text style={paragraph}>

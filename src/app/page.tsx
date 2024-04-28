@@ -11,9 +11,9 @@ export default function BackgroundBeamsDemo() {
 
   const sendMail = async () => {
     try {
-      const parsedEmail = schema.safeParse(email);
+      messageSchema.parse(message);
     } catch (error: any) {
-      toast.error("Invalid email format");
+      toast.error("Minimum 6 characters needed to send message!");
       return;
     }
 
@@ -32,7 +32,8 @@ export default function BackgroundBeamsDemo() {
     }
   };
 
-  const schema = z.string().email({ message: "invalid email format" });
+  const emailSchema = z.string().email({ message: "invalid email format" });
+  const messageSchema = z.string().min(6);
 
   return (
     <>
