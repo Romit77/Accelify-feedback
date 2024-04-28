@@ -25,7 +25,7 @@ export const KoalaWelcomeEmail = ({
 }: KoalaWelcomeEmailProps) => (
   <Html>
     <Head />
-    <Preview>Linux Club Vitb</Preview>
+    <Preview>Accelify</Preview>
     <Body style={main}>
       <Container style={container}>
         <Img
@@ -40,14 +40,14 @@ export const KoalaWelcomeEmail = ({
         {UserEmail && <Text style={paragraph}> User-Email: {UserEmail}</Text>}
         {message && <Text style={paragraph}>Message: {message}</Text>}
         <Section style={btnContainer}>
-          <Button style={button} href="linux-vitb.vercel.app">
+          <Button style={button} href="https://accelify.vercel.app/">
             Get started
           </Button>
         </Section>
         <Text style={paragraph}>
           Best,
           <br />
-          Linux Club
+          Accelify
         </Text>
         <Hr style={hr} />
         <Text style={footer}>Vitb , Sehore Mp </Text>
